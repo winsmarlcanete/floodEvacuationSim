@@ -1,0 +1,171 @@
+id,access,highway,name,lanes,maxspeed,surface,motorcar,service,oneway,Links
+way/24158513,private,residential,,2,30,paved,yes,,no,View on OSM
+way/24158518,public,residential,A. Bonifacio Street,2,30,paved,yes,,no,View on OSM
+way/24158573,destination,residential,,2,30,paved,yes,,no,View on OSM
+way/24158585,private,residential,,2,30,paved,yes,,no,View on OSM
+way/24158628,destination,residential,,2,30,paved,yes,,no,View on OSM
+way/24158632,public,residential,A. Bonifacio Extension,2,30,paved,yes,,no,View on OSM
+way/24158657,private,residential,,2,30,paved,yes,,no,View on OSM
+way/24158664,private,service,,2,20,unpaved,no,alley,no,View on OSM
+way/24158694,destination,residential,Jupiter Street,2,30,paved,yes,,no,View on OSM
+way/24158710,destination,residential,Humanity Village Road,2,30,paved,yes,,no,View on OSM
+way/24158765,public,residential,General Villamor Street,2,30,paved,yes,,no,View on OSM
+way/24158774,destination,service,,2,20,unpaved,no,alley,no,View on OSM
+way/24158792,destination,service,,2,20,unpaved,no,alley,no,View on OSM
+way/24158865,private,residential,,2,30,paved,yes,,no,View on OSM
+way/24158891,public,footway,,1,,paved,no,,no,View on OSM
+way/28321106,public,residential,General Capinpin Street,2,30,paved,yes,,no,View on OSM
+way/28321109,public,residential,General Yengko Street,2,30,paved,yes,,no,View on OSM
+way/30438267,public,residential,General Antonio Luna Street,2,30,paved,yes,,no,View on OSM
+way/30438268,public,residential,General Lucban Street,2,30,paved,yes,,no,View on OSM
+way/30438269,public,residential,General Malvar Street,2,30,paved,yes,,no,View on OSM
+way/34910176,public,residential,San Jose Street,2,30,paved,yes,,no,View on OSM
+way/124171728,public,residential,,2,30,paved,yes,,no,View on OSM
+way/124171729,destination,residential,,2,30,paved,yes,,no,View on OSM
+way/124171732,private,residential,,2,30,paved,yes,,no,View on OSM
+way/124171734,public,residential,,2,30,paved,yes,,no,View on OSM
+way/124171735,private,residential,,2,30,paved,yes,,no,View on OSM
+way/124171737,destination,residential,,2,30,paved,yes,,no,View on OSM
+way/124171738,destination,service,,2,20,unpaved,no,alley,no,View on OSM
+way/124171740,public,residential,,2,30,paved,yes,,no,View on OSM
+way/124171743,private,residential,,2,30,paved,yes,,no,View on OSM
+way/124171749,private,residential,Housing Street,2,30,paved,yes,,no,View on OSM
+way/124171754,public,residential,A. Bonifacio Extension,2,30,paved,yes,,no,View on OSM
+way/124171755,destination,residential,,2,30,paved,yes,,no,View on OSM
+way/124171758,destination,residential,,2,30,paved,yes,,no,View on OSM
+way/124171759,public,residential,A. Bonifacio Street,2,30,paved,yes,,no,View on OSM
+way/124171767,private,footway,,1,,paved,no,,no,View on OSM
+way/124171771,destination,residential,,2,30,paved,yes,,no,View on OSM
+way/237101539,public,residential,Pineda Street,2,30,paved,yes,,no,View on OSM
+way/252721994,destination,service,Block 3-4,2,20,unpaved,yes,alley,no,View on OSM
+way/252722014,public,path,,1,,paved,no,,no,View on OSM
+way/252722016,public,footway,,1,,paved,no,,no,View on OSM
+way/252722017,private,residential,,2,30,paved,yes,,no,View on OSM
+way/252722024,private,service,,2,20,unpaved,yes,,no,View on OSM
+way/252724612,destination,residential,,2,30,paved,yes,,no,View on OSM
+way/260901194,public,path,,1,,paved,no,,no,View on OSM
+way/482454409,public,residential,,2,30,paved,yes,,no,View on OSM
+way/482454411,public,footway,,1,,paved,no,,no,View on OSM
+way/482454413,public,footway,,1,,paved,no,,no,View on OSM
+way/593463083,public,residential,General F. Macabulos Street,2,30,paved,yes,,no,View on OSM
+way/594263300,private,residential,,2,30,paved,yes,,no,View on OSM
+way/594263301,private,service,,2,20,unpaved,no,alley,no,View on OSM
+way/594263302,private,service,,2,20,unpaved,no,alley,no,View on OSM
+way/594263304,destination,residential,Venus Street,2,30,paved,yes,,no,View on OSM
+way/594263306,public,residential,General Geronimo Street,2,30,paved,yes,,no,View on OSM
+way/594263307,private,service,,2,20,unpaved,no,alley,no,View on OSM
+way/594263308,private,service,,2,20,unpaved,no,alley,no,View on OSM
+way/594263309,private,residential,,2,30,paved,yes,,no,View on OSM
+way/594263310,private,residential,,2,30,paved,yes,,no,View on OSM
+way/594263311,private,residential,,2,30,paved,yes,,no,View on OSM
+way/594263312,private,residential,,2,30,paved,yes,,no,View on OSM
+way/594263313,private,residential,,2,30,paved,yes,,no,View on OSM
+way/594266972,private,residential,,2,30,unpaved,yes,,no,View on OSM
+way/594266974,public,path,,1,,paved,no,,no,View on OSM
+way/594266976,public,path,,1,,paved,no,,no,View on OSM
+way/594266978,public,path,,1,,paved,no,,no,View on OSM
+way/594266980,public,path,,1,,paved,no,,no,View on OSM
+way/594266982,public,path,,1,,paved,no,,no,View on OSM
+way/596079598,destination,residential,,2,30,paved,yes,,no,View on OSM
+way/596079599,public,path,,1,,paved,no,,no,View on OSM
+way/596079600,public,path,,1,,paved,no,,no,View on OSM
+way/596079601,public,path,,1,,paved,no,,no,View on OSM
+way/596082043,public,path,,1,,paved,no,,no,View on OSM
+way/596082044,private,residential,,2,30,paved,yes,,no,View on OSM
+way/596082045,public,residential,,2,30,paved,yes,,no,View on OSM
+way/596082046,public,residential,,2,30,paved,yes,,no,View on OSM
+way/596082047,destination,service,,2,20,unpaved,no,alley,no,View on OSM
+way/596082048,destination,service,,2,20,unpaved,no,alley,no,View on OSM
+way/596082049,destination,service,,2,20,unpaved,no,alley,no,View on OSM
+way/596082050,destination,service,,2,20,unpaved,no,alley,no,View on OSM
+way/596164543,public,footway,,1,,paved,no,,no,View on OSM
+way/596164547,destination,residential,,2,30,paved,yes,,no,View on OSM
+way/596164548,destination,residential,,2,30,paved,yes,,no,View on OSM
+way/596164549,destination,residential,,2,30,paved,yes,,no,View on OSM
+way/726574325,private,residential,,2,30,paved,yes,,no,View on OSM
+way/726574326,public,residential,A. Bonifacio Extension,2,30,paved,yes,,no,View on OSM
+way/726574328,public,path,,1,,paved,no,,no,View on OSM
+way/726574329,public,path,,1,,paved,no,,no,View on OSM
+way/726574330,public,path,,1,,paved,no,,no,View on OSM
+way/797207912,private,residential,,2,30,paved,yes,,no,View on OSM
+way/894137266,destination,residential,,2,30,unpaved,yes,,no,View on OSM
+way/894148063,destination,residential,,2,30,paved,yes,,no,View on OSM
+way/894148064,destination,residential,,2,30,paved,yes,,no,View on OSM
+way/894520854,public,residential,,2,30,paved,yes,,no,View on OSM
+way/894520855,public,residential,,2,30,paved,yes,,no,View on OSM
+way/894520856,public,residential,,2,30,paved,yes,,no,View on OSM
+way/894528181,public,footway,,2,,paved,no,,no,View on OSM
+way/894528182,public,residential,,2,30,paved,yes,,no,View on OSM
+way/895405822,public,path,,1,,paved,no,,no,View on OSM
+way/895405823,public,path,,1,,paved,no,,no,View on OSM
+way/895405824,public,residential,,2,30,paved,yes,,no,View on OSM
+way/895428121,private,pedestrian,,2,,paved,no,,no,View on OSM
+way/895508312,public,residential,Lingayen Street,2,30,paved,yes,,no,View on OSM
+way/902938214,public,residential,,2,30,paved,yes,,no,View on OSM
+way/902938824,destination,residential,,2,30,paved,yes,,no,View on OSM
+way/1106980149,public,residential,Lingayen Street,2,30,paved,yes,,no,View on OSM
+way/1106999424,public,path,,1,,paved,no,,no,View on OSM
+way/1106999427,private,service,,2,20,unpaved,yes,driveway,no,View on OSM
+way/1106999428,private,service,,2,20,unpaved,yes,driveway,no,View on OSM
+way/1107013136,public,footway,,1,,paved,no,,no,View on OSM
+way/1107024937,private,service,,2,20,unpaved,yes,,no,View on OSM
+way/11070249,public,residential,A. Bonifacio Extension,2,30,paved,yes,,no,View on OSM
+way/1107029202,private,service,,2,20,unpaved,no,,no,View on OSM
+way/1107228887,public,residential,General Antonio Luna Street,2,30,paved,yes,,no,View on OSM
+way/1123244168,public,residential,Jupiter Street,2,30,paved,yes,,no,View on OSM
+way/1123244169,public,residential,A. Bonifacio Street,2,30,paved,yes,,no,View on OSM
+way/1123244170,public,residential,General Geronimo Street,2,30,paved,yes,,no,View on OSM
+way/1123244172,public,residential,J. P. Rizal Street,2,30,paved,yes,,no,View on OSM
+way/1283425173,private,service,,2,20,unpaved,no,alley,no,View on OSM
+way/1307282281,public,footway,,1,,paved,no,,no,View on OSM
+way/1307282282,public,service,,2,20,unpaved,yes,driveway,no,View on OSM
+way/1307285143,public,path,,1,,paved,no,,no,View on OSM
+way/1307285144,public,path,,1,,paved,no,,no,View on OSM
+way/1307289669,destination,service,,2,20,unpaved,no,alley,no,View on OSM
+way/1307289670,destination,service,,2,20,unpaved,no,alley,no,View on OSM
+way/1307289671,public,residential,San Isidro Labrador Street,2,30,paved,yes,,no,View on OSM
+way/1307289672,public,residential,,2,30,paved,yes,,no,View on OSM
+way/1307289673,public,footway,,1,,paved,no,,no,View on OSM
+way/1307289674,private,residential,,2,30,paved,yes,,no,View on OSM
+way/1307299198,destination,pedestrian,,1,,paved,no,,no,View on OSM
+way/1307299199,destination,service,,2,20,unpaved,no,alley,no,View on OSM
+way/1307299200,destination,residential,,2,30,paved,yes,,no,View on OSM
+way/1307300478,private,residential,,2,30,unpaved,yes,,no,View on OSM
+way/1307300479,private,residential,,2,30,unpaved,yes,,no,View on OSM
+way/1307300480,destination,service,,2,20,unpaved,yes,alley,no,View on OSM
+way/1307304323,public,path,,1,,paved,no,,no,View on OSM
+way/1307304324,public,path,,1,,paved,no,,no,View on OSM
+way/1307304325,public,path,,1,,paved,no,,no,View on OSM
+way/1307304326,public,path,,1,,paved,no,,no,View on OSM
+way/1307304327,public,path,,1,,paved,no,,no,View on OSM
+way/1307304328,destination,residential,San Isidro Labrador Street,2,30,paved,yes,,no,View on OSM
+way/1307304329,public,residential,,2,30,unpaved,yes,,no,View on OSM
+way/1307304330,public,residential,,2,30,paved,yes,,no,View on OSM
+way/1307304331,public,residential,,2,30,paved,yes,,no,View on OSM
+way/1307304332,public,residential,,2,30,paved,yes,,no,View on OSM
+way/1307304333,destination,residential,,2,30,paved,yes,,no,View on OSM
+way/1307304334,destination,residential,,2,30,paved,yes,,no,View on OSM
+way/1308003781,private,residential,,2,30,paved,yes,,no,View on OSM
+way/1308003782,public,residential,,2,30,paved,yes,,no,View on OSM
+way/1308008785,public,residential,,2,30,paved,yes,,no,View on OSM
+way/1308014517,public,residential,Humanity Village Road,2,30,paved,yes,,no,View on OSM
+way/1308014518,destination,residential,Saturn Street,2,30,paved,yes,,no,View on OSM
+way/1308014519,destination,service,,2,20,unpaved,no,alley,no,View on OSM
+way/1308014520,destination,steps,,2,,paved,no,,no,View on OSM
+way/1308014521,destination,service,,2,20,unpaved,no,alley,no,View on OSM
+way/1308022679,public,residential,,2,30,paved,yes,,no,View on OSM
+way/1308024165,public,residential,,2,30,paved,yes,,no,View on OSM
+way/1308024166,public,residential,,2,30,paved,yes,,no,View on OSM
+way/1308024167,public,service,,2,20,unpaved,no,alley,no,View on OSM
+way/1308024168,public,service,Block 3-4,2,20,unpaved,no,alley,no,View on OSM
+way/1308024169,public,service,,2,20,unpaved,no,alley,no,View on OSM
+way/1308024170,public,path,,1,,paved,no,,no,View on OSM
+way/1308025028,public,service,,2,20,unpaved,yes,driveway,no,View on OSM
+way/1308025029,public,pedestrian,,2,,paved,no,,no,View on OSM
+way/1308026590,public,residential,,2,30,paved,yes,,no,View on OSM
+way/1308026591,public,residential,,2,30,paved,yes,,no,View on OSM
+way/1308026592,public,residential,,2,30,paved,yes,,no,View on OSM
+way/1308324995,destination,residential,,2,30,paved,yes,,no,View on OSM
+way/1308324996,destination,residential,,2,30,paved,yes,,no,View on OSM
+way/1309904252,public,residential,,2,30,paved,yes,,no,View on OSM
+way/1309904253,private,residential,,2,30,paved,yes,,no,View on OSM
