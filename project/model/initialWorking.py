@@ -2,43 +2,61 @@ import pandas as pd
 import networkx as nx
 import matplotlib.pyplot as plt
 from shapely import wkt
-from geopy.distance import geodesic
 from matplotlib.widgets import Button
+from sklearn.neighbors import KDTree
+from geopy.distance import geodesic
 
-# === Load and preprocess data ===
+# === Load Dataset ===
 df = pd.read_csv("../data/final_data/preprocessed_Map.csv")
 df['geometry'] = df['geometry'].apply(wkt.loads)
+
+# === Build Graph ===
+G = nx.DiGraph()
+positions = set()
 
 def round_coords(geom, decimals=5):
     return [(round(x, decimals), round(y, decimals)) for x, y in geom.coords]
 
-# === Build the graph ===
-G = nx.DiGraph()
-
+# Add edges from geometries
 for _, row in df.iterrows():
     coords = round_coords(row['geometry'])
+    length = row['length']
     for i in range(len(coords) - 1):
         start = coords[i]
         end = coords[i + 1]
-        if start == end:
-            continue
-        if not G.has_edge(start, end):
-            distance = geodesic((start[1], start[0]), (end[1], end[0])).meters
-            G.add_edge(start, end, weight=distance)
+        positions.add(start)
+        positions.add(end)
+        segment_length = length / (len(coords) - 1)
+        G.add_edge(start, end, weight=segment_length)
+        G.add_edge(end, start, weight=segment_length)  # Bidirectional
 
-# === Remove isolated nodes and save clean node list ===
-isolated = list(nx.isolates(G))
-G.remove_nodes_from(isolated)
-cleaned_nodes = list(G.nodes())
-pd.DataFrame(cleaned_nodes, columns=["lon", "lat"]).to_csv("cleaned_nodes.csv", index=False)
+# Add missing node connections using KDTree (nearest neighbors)
+coords_list = list(positions)
+tree = KDTree(coords_list)
 
-print(f"Graph built: {G.number_of_nodes()} nodes, {G.number_of_edges()} edges")
+for i, point in enumerate(coords_list):
+    distances, indices = tree.query([point], k=4)  # 3 nearest neighbors + self
+    for j in indices[0][1:]:
+        neighbor = coords_list[int(j)]
+        if not G.has_edge(point, neighbor):
+            dist = geodesic((point[1], point[0]), (neighbor[1], neighbor[0])).meters
+            G.add_edge(point, neighbor, weight=dist)
+            G.add_edge(neighbor, point, weight=dist)  # Bidirectional
 
-# === Define the fixed end node ===
-end_node = (round(121.1114449, 5), round(14.7017247, 5))  # Make sure this matches rounding
-show_nodes = False  # toggle flag
+# === End Node ===
+# Build KDTree for all node positions
+coords_list = list(G.nodes)
+tree = KDTree(coords_list)
 
-# === Plotting function ===
+# Snap to nearest actual graph node
+target = (121.1114449, 14.7017247)
+_, index = tree.query([target], k=1)
+end_node = coords_list[int(index[0][0])]
+
+print(f"Snapped end_node: {end_node}")
+show_nodes = False
+
+# === Plotting Function ===
 fig, ax = plt.subplots(figsize=(10, 8))
 
 def plot_graph(path=None):
@@ -61,14 +79,14 @@ def plot_graph(path=None):
     else:
         ax.scatter(*end_node, color='black', s=60, label='End Node', zorder=5)
 
-    ax.set_title("Click a point to find path to end node")
+    ax.set_title("Click on a point to find path to end node")
     ax.set_xlabel("Longitude")
     ax.set_ylabel("Latitude")
     ax.legend()
     ax.grid(True)
     fig.canvas.draw()
 
-# === Button to toggle nodes ===
+# === Button for Node Toggle ===
 ax_button = plt.axes([0.8, 0.01, 0.15, 0.05])
 toggle_button = Button(ax_button, 'Toggle Nodes')
 
@@ -79,23 +97,24 @@ def toggle_nodes(event):
 
 toggle_button.on_clicked(toggle_nodes)
 
-# === Click event to find path ===
+# === Click Event Handler ===
 def on_click(event):
     if event.inaxes != ax:
         return
-    clicked = (round(event.xdata, 5), round(event.ydata, 5))
-    print(f"Clicked: {clicked}")
+
+    clicked_point = (event.xdata, event.ydata)
+    print(f"Clicked: {clicked_point}")
 
     # Find closest node
-    closest = None
     min_dist = float('inf')
+    closest = None
     for node in G.nodes():
-        dist = ((node[0] - clicked[0])**2 + (node[1] - clicked[1])**2) ** 0.5
+        dist = ((node[0] - clicked_point[0]) ** 2 + (node[1] - clicked_point[1]) ** 2) ** 0.5
         if dist < min_dist:
             min_dist = dist
             closest = node
 
-    if min_dist > 0.0005:  # ~50m tolerance
+    if min_dist > 0.0005:  # approx 50m
         print("Too far from road network.")
         return
 
@@ -105,14 +124,15 @@ def on_click(event):
 
     try:
         path = nx.dijkstra_path(G, source=closest, target=end_node, weight='weight')
-        print(f"Path found: {path}")
+        print(f"Path: {path}")
         plot_graph(path=path)
     except nx.NetworkXNoPath:
         print("No path found.")
     except nx.NodeNotFound:
-        print("Node not in graph.")
+        print("Node not found in graph.")
 
-# === Initialize ===
 fig.canvas.mpl_connect('button_press_event', on_click)
+
+# === Initial Plot ===
 plot_graph()
 plt.show()
